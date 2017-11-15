@@ -1,0 +1,4 @@
+Algoritmos,Lógica Matemática,Introdução à Ciência da Computação,Cálculo  Diferencial e Integral 1,Geometria Analítica e Álgebra Linear,Comunicação Linguística,Ética Profissional e Cidadania,Algoritmos e Estruturas de Dados
+Elementos de Lógica Digital,Física 3,Probabilidade e Estatística,Fundamentos de Administração,,Algoritmos e Estruturas de Dados,
+Arquitetura e Organização de Computadores,Interação Homem-Computador,Cálculo Numérico,Análise e Projeto Orientado a Objetos,
+Banco de Dados 1,Teoria dos GrafosLinguagens Formais, Autômatos e Computabilidade,Sistemas Microcontrolados,Redes de Computadores,Programação de Aplicativos,Banco de Dados 2,Sistemas Operacionais,Linguagens de Programação,Análise de Algoritmos,Projeto Integrador,Engenharia de Software 1,Redes de Computadores,Computação Gráfica,Inteligência Artificial 	
