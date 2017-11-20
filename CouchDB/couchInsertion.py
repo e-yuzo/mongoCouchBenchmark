@@ -1,5 +1,6 @@
 import couchdb;
 import sys;
+#import arquivo gerador
 
 if len(sys.argv) != 2:
     print ("Utilize o seguinte formato: <Nome do Programa> <Número de Documentos>");
@@ -11,7 +12,7 @@ else:
     #print (db.name);
     count = 1;
     for i in range(int(sys.argv[1])):
-        db.create(); #save document in database
-        print((float(count)/float(sys.argv[1])) * 100, "% ");
+        db.create(geradorAluno()); #save document in database
+        print(count, " ");
         count = count + 1;
     #del server['teste'];
