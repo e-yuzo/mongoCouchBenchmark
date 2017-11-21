@@ -1,5 +1,6 @@
 import couchdb;
 import sys;
+from randomDocs import geradorAluno;
 #import arquivo gerador
 
 if len(sys.argv) != 2:
@@ -10,9 +11,9 @@ else:
     #print (db);
     db = server['teste'];
     #print (db.name);
-    count = 1;
+    #count = 1;
     for i in range(int(sys.argv[1])):
         db.create(geradorAluno()); #save document in database
-        print(count, " ");
-        count = count + 1;
+        #print(count, " ");
+        #count = count + 1;
     #del server['teste'];

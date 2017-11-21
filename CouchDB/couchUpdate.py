@@ -9,20 +9,20 @@ else:
     if(sys.argv[1] == 1):
         map_fun = '''function(doc) {
             if(doc.semestre == 2) {
-                emit(doc.name, null);
+                emit(doc._id, doc);
         }}
         ''';
         results = db.query(map_fun);
         #fazer o acrescimo no cr + 0.01
         for doc in results:
-            acresc = 0.01 + doc["cr"];
-            update['cr'] = acresc;
+            acresc = 0.01 + doc["CR"];
+            update['CR'] = acresc;
             doc = update;
             db.save(doc);
     if(sys.argv[1] == 2):
         map_fun = '''function(doc) {
-            if(doc.cr > 0.8 && doc.salario < 600 && "especie" in doc)
-                emit(doc.name, null);
+            if(doc.CR > 0.8 && doc.projeto.salario < 600 && doc.projeto.especie)
+                emit(doc._id, doc);
         }
         ''';
         results = db.query(map_fun);

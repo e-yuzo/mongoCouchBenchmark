@@ -8,12 +8,12 @@ if len(sys.argv) != 2:
 else:
     if(sys.argv[1] == 1):
         map_fun = '''function(doc){
-            if ("materia" in doc && doc.materia.length > 10 && doc.semestre >= 6){
+            if (doc.dependencias && doc.dependencias.length > 10 && doc.semestre >= 6){
                 emit(doc._id, doc)
             }}''';
     if(sys.argv[1] == 2):
         map_fun = '''function(doc){
-            if ("especie" in doc && doc.cr < 0.6){
+            if (doc.projeto && doc.CR < 0.6){
                 emit(doc._id, doc)
             }}''';
     deldoclist = [];
