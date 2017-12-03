@@ -1,4 +1,5 @@
 import random
+from uuid import uuid4
 from collections import defaultdict
 SEMENTE=42 #Gera uma pseudo-aleatoriadade reproduzivel
 ESPECIES=["monitoria","extensão","pesquisa"]
@@ -10,6 +11,7 @@ def geradorAluno():
 	aux=random.randint(1,10)#Definirá o semestre do Aluno
 	if(aux==1):#Caso for do primeiro Semestre
 		aluno={
+                        "_id":uuid4().hex,
                         "RA":''.join(random.sample("0123456789",7)),
                         "nome":''.join(random.sample("abcdefghijklmnopqrstuvwxyz",random.randint(3,20))),
                         "semestre":aux,
@@ -17,6 +19,7 @@ def geradorAluno():
 		}
 	else:
 		aluno={
+                        "_id":uuid4().hex,
 			"RA":''.join(random.sample("0123456789",7)),
 			"nome":''.join(random.sample("abcdefghijklmnopqrstuvwxyz",random.randint(3,20))),
 			"semestre":aux,
